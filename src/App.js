@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
+import SomeRandomComponent from "./components/SomeRandomComponent"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SomeRandomComponent user={{firstName:"John",lastName: "Doe", age: 45, hair: "Black" }}/> 
+      <SomeRandomComponent user={{firstName:"John",lastName: "Smith", age: 88, hair: "Brown" }}/>
+      <SomeRandomComponent user={{firstName:"Millard",lastName: "Fillmore", age: 50, hair: "Brown" }}/> 
+      <SomeRandomComponent user={{firstName:"Maria",lastName: "Smith", age: 62, hair: "Brown" }}/> 
     </div>
   );
 }
